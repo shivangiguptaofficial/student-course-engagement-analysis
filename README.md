@@ -36,6 +36,14 @@ The project uses a relational database structure consisting of three core tables
 
 ---
 
+## 📊 Key Findings & Insights
+* **Overall Conversion Rate:** Approximately **11%** of engaged students convert into paying customers after watching a lecture.
+* **Registration-to-Engagement Time:** On average, students take **3 to 4 days** after registering to watch their first lecture. Most students (mode/median = 0-1 day) start almost immediately — a small number of outliers take much longer, making the distribution **right-skewed**.
+* **Engagement-to-Purchase Time:** On average, it takes about **24 days** from first watching content to making a purchase. However, the median is just **1 day**, showing most students who convert do so quickly — the higher average is pulled up by a few students who take months to decide.
+* **Engagement Frequency:** The distribution is heavily skewed toward one-time or low-frequency viewers, with a smaller cohort of dedicated "power learners." 
+
+
+
 ## 🚀 How to Run This Project
 1. Clone this repository or copy the scripts.
 2. Import your database dump (`db_course_conversions`) into your MySQL server.
