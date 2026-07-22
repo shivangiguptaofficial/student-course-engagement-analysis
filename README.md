@@ -77,3 +77,34 @@ erDiagram
 - **Engagement-to-Purchase Time:** On average, it takes about **XX days** from first watching content to making a purchase.
 - **Engagement Frequency:** The distribution is heavily skewed toward one-time or low-frequency viewers, with a small segment of highly engaged repeat learners.
 - **Drop-off Point:** The biggest leakage in the funnel occurs between [stage A] and [stage B], indicating [reason/insight].
+
+## 📊 Visualizations & Funnel Analysis
+
+*(Below are visual representations generated from the data analysis pipeline)*
+
+### 1. Conversion Funnel Breakdown
+> 
+
+![Conversion Funnel](assets/conversion_funnel.png)
+
+
+- **Insight:** Shows the drop-off percentage from initial platform registration to active course consumption to final purchase.
+- **Key Takeaway:** Highlights the critical leakage point where users drop out before engaging, emphasizing the need for stronger onboarding nudges.
+
+### 2. Engagement Frequency Distribution
+> 
+
+![Engagement Frequency](assets/engagement_frequency.png)
+
+
+- **Insight:** Illustrates how many unique days students spend interacting with course content.
+- **Key Takeaway:** Visualizes the right-skewed pattern where a majority of students are one-time viewers, isolated from a smaller group of consistently active learners.
+
+### 3. [Add More Visuals As Needed]
+> 
+
+![Chart Name](assets/chart-name.png)
+
+
+- **Insight:** What this chart shows.
+- **Key Takeaway:** What business decision or pattern this supports.
