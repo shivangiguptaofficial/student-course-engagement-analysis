@@ -60,3 +60,21 @@ erDiagram
     student_info ||--o{ student_purchases : "monetizes"
 
 
+
+                                                                                                                        ## 📈 Key Business Metrics Tracked
+
+1. **Daily Active Users (DAU):** Monitoring platform traffic and daily student participation trends.
+2. **Engagement Frequency:** Analyzing how many unique days students spend learning.
+3. **Conversion Funnel & Rate:** Calculating the percentage of registered or engaged students who successfully purchase a course.
+4. **Time-to-Conversion:** Measuring the duration between a student's activity (registration/engagement) and their actual course purchase.
+5. **Retention Segments:** Classifying students into one-time viewers vs. repeat/regular learners based on engagement frequency.
+
+---
+
+## 🔍 Key Findings & Insights
+
+- **Overall Conversion Rate:** Approximately **XX%** of engaged students convert into paying customers after interacting with course content.
+- **Registration-to-Engagement Time:** On average, students take **X to X days** after registering to watch their first piece of content.
+- **Engagement-to-Purchase Time:** On average, it takes about **XX days** from first watching content to making a purchase.
+- **Engagement Frequency:** The distribution is heavily skewed toward one-time or low-frequency viewers, with a small segment of highly engaged repeat learners.
+- **Drop-off Point:** The biggest leakage in the funnel occurs between [stage A] and [stage B], indicating [reason/insight].
