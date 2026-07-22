@@ -34,9 +34,15 @@ The project uses a relational database structure consisting of three core tables
 | Column Name       | Data Type | Description                                             |
 |-------------------|-----------|-----------------------------------------------------------|
 | `student_id`      | INT       | Unique identifier for the student who made a purchase.    |
-| `date_purchased`  | DATE      | The date when the student purchased a 
+| `date_purchased`  | DATE      | The date when the student purchased a paid course.        |
 
+---
 
+## 🧩 Database Architecture & ERD
+
+The project uses a relational database structure (`db_course_conversions`) consisting of three core tables linked via `student_id`.
+
+```mermaid
 erDiagram
     student_info {
         INT student_id PK "Unique Student ID"
@@ -52,82 +58,5 @@ erDiagram
     }
     student_info ||--o{ student_engagement : "tracks activity"
     student_info ||--o{ student_purchases : "monetizes"
-    
-
-
-## 📈 Key Business Metrics Tracked
-
-1. **Daily Active Users (DAU):** Monitoring platform traffic and daily student participation trends.
-2. **Engagement Frequency:** Analyzing how many unique days students spend learning.
-3. **Conversion Funnel & Rate:** Calculating the percentage of registered or engaged students who successfully purchase a course.
-4. **Time-to-Conversion:** Measuring the duration between a student's activity (registration/engagement) and their actual course purchase.
-5. **Retention Segments:** Classifying students into one-time viewers vs. repeat/regular learners based on engagement frequency.
-
-## 🔍 Key Findings & Insights
-
-- **Overall Conversion Rate:** Approximately **XX%** of engaged students convert into paying customers after interacting with course content.
-- **Registration-to-Engagement Time:** On average, students take **X to X days** after registering to watch their first piece of content.
-- **Engagement-to-Purchase Time:** On average, it takes about **XX days** from first watching content to making a purchase.
-- **Engagement Frequency:** The distribution is heavily skewed toward one-time or low-frequency viewers, with a small segment of highly engaged repeat learners.
-- **Drop-off Point:** The biggest leakage in the funnel occurs between [stage A] and [stage B], indicating [reason/insight].
-
-## 📊 Visualizations & Funnel Analysis
-
-*(Below are visual representations generated from the data analysis pipeline)*
-
-### 1. Conversion Funnel Breakdown
-> 
-
-![Conversion Funnel](assets/conversion_funnel.png)
-
-
-- **Insight:** Shows the drop-off percentage from initial platform registration to active course consumption to final purchase.
-- **Key Takeaway:** Highlights the critical leakage point where users drop out before engaging, emphasizing the need for stronger onboarding nudges.
-
-### 2. Engagement Frequency Distribution
-> 
-
-![Engagement Frequency](assets/engagement_frequency.png)
-
-
-- **Insight:** Illustrates how many unique days students spend interacting with course content.
-- **Key Takeaway:** Visualizes the right-skewed pattern where a majority of students are one-time viewers, isolated from a smaller group of consistently active learners.
-
-### 3. [Add More Visuals As Needed]
-> 
-
-![Chart Name](assets/chart-name.png)
-
-
-- **Insight:** What this chart shows.
-- **Key Takeaway:** What business decision or pattern this supports.
-
-## 🗃️ Sample Query Outputs & Snippets
-
-Here are sample SQL queries used in the analysis pipeline to calculate key metrics across the conversion funnel.
-
-### 1. Overall Conversion Rate (Registration-to-Purchase Funnel)
-Calculates the percentage of ALL registered students (regardless of engagement) who went on to purchase.
-```sql
-SELECT
-    COUNT(DISTINCT i.student_id) AS total_registered,
-    COUNT(DISTINCT p.student_id) AS total_purchased,
-    ROUND(COUNT(DISTINCT p.student_id) * 100.0 / COUNT(DISTINCT i.student_id), 2) AS overall_conversion_rate_percentage
-FROM
-    student_info i
-LEFT JOIN
-    student_purchases p ON i.student_id = p.student_id;
-
-student-course-engagement-analysis/
-├── analysis.sql              # All SQL queries used in the analysis
-├── assets/
-│   ├── conversion_funnel.png
-│   └── engagement_frequency.png
-└── README.md
-
-git clone https://github.com/shivangiguptaofficial/student-course-engagement-analysis.git
-cd student-course-engagement-analysis
-mysql -u your_username -p db_course_conversions < analysis.sql
-
 
 
