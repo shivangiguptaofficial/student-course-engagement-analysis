@@ -106,5 +106,32 @@ erDiagram
 - **Insight:** What this chart shows.
 - **Key Takeaway:** What business decision or pattern this supports.
 
+## 🗃️ Sample Query Outputs & Snippets
+
+Here are sample SQL queries used in the analysis pipeline to calculate key metrics across the conversion funnel.
+
+### 1. Overall Conversion Rate (Registration-to-Purchase Funnel)
+Calculates the percentage of ALL registered students (regardless of engagement) who went on to purchase.
+```sql
+SELECT
+    COUNT(DISTINCT i.student_id) AS total_registered,
+    COUNT(DISTINCT p.student_id) AS total_purchased,
+    ROUND(COUNT(DISTINCT p.student_id) * 100.0 / COUNT(DISTINCT i.student_id), 2) AS overall_conversion_rate_percentage
+FROM
+    student_info i
+LEFT JOIN
+    student_purchases p ON i.student_id = p.student_id;
+
+student-course-engagement-analysis/
+├── analysis.sql              # All SQL queries used in the analysis
+├── assets/
+│   ├── conversion_funnel.png
+│   └── engagement_frequency.png
+└── README.md
+
+git clone https://github.com/shivangiguptaofficial/student-course-engagement-analysis.git
+cd student-course-engagement-analysis
+mysql -u your_username -p db_course_conversions < analysis.sql
+
 
 
