@@ -43,6 +43,20 @@ The project uses a relational database structure consisting of three core tables
 * **Engagement Frequency:** The distribution is heavily skewed toward one-time or low-frequency viewers, with a smaller cohort of dedicated "power learners." 
 
 
+## 📉 Visualizations & Funnel Analysis
+*(Below are visual representations generated from the data analysis pipeline)*
+
+### 1. Conversion Funnel Breakdown
+> ![Conversion Funnel](assets/conversion_funnel.png)
+* **Insight:** Shows the drop-off percentage from initial platform registration to active course consumption and final purchase.
+* **Key Takeaway:** Highlights the critical leakage point where users drop out before engaging, emphasizing the need for targeted onboarding emails.
+
+### 2. Engagement Frequency Distribution
+> ![Engagement Frequency](assets/engagement_frequency.png)
+* **Insight:** Illustrates how many unique days students spend interacting with course content.
+* **Key Takeaway:** Visualizes the right-skewed pattern where a majority are one-time viewers, isolated from the core cohort of dedicated power learners.
+
+
 
 ## 🚀 How to Run This Project
 1. Clone this repository or copy the scripts.
