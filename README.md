@@ -100,15 +100,6 @@ erDiagram
 - **Insight:** Illustrates how many unique days students spend interacting with course content.
 - **Key Takeaway:** Visualizes the right-skewed pattern where a majority of students are one-time viewers, isolated from a smaller group of consistently active learners.
 
-### 3. [Add More Visuals As Needed]
-> 
-
-![Chart Name](assets/chart-name.png)
-
-
-- **Insight:** What this chart shows.
-- **Key Takeaway:** What business decision or pattern this supports.
-
 
 ## 🛠️ Tech Stack
 
