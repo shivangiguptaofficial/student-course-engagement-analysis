@@ -117,14 +117,3 @@ erDiagram
 - **Diagramming:** Mermaid (ERD)
 - **Version Control:** Git & GitHub
 
-student-course-engagement-analysis/
-├── analysis.sql              # All SQL queries used in the analysis
-├── assets/
-│   ├── conversion_funnel.png
-│   └── engagement_frequency.png
-└── README.md
-
-git clone https://github.com/shivangiguptaofficial/student-course-engagement-analysis.git
-cd student-course-engagement-analysis
-mysql -u your_username -p db_course_conversions < analysis.sql
-
