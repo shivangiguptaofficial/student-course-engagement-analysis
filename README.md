@@ -58,9 +58,9 @@ erDiagram
     }
     student_info ||--o{ student_engagement : "tracks activity"
     student_info ||--o{ student_purchases : "monetizes"
+```
 
-
-                                                                                                                        ## 📈 Key Business Metrics Tracked
+ ## 📈 Key Business Metrics Tracked
 
 1. **Daily Active Users (DAU):** Monitoring platform traffic and daily student participation trends.
 2. **Engagement Frequency:** Analyzing how many unique days students spend learning.
