@@ -108,3 +108,23 @@ erDiagram
 
 - **Insight:** What this chart shows.
 - **Key Takeaway:** What business decision or pattern this supports.
+
+
+## 🛠️ Tech Stack
+
+- **Database:** MySQL
+- **Language:** SQL (aggregate functions, subqueries, joins, `GROUP BY`/`HAVING` based analysis)
+- **Diagramming:** Mermaid (ERD)
+- **Version Control:** Git & GitHub
+
+student-course-engagement-analysis/
+├── analysis.sql              # All SQL queries used in the analysis
+├── assets/
+│   ├── conversion_funnel.png
+│   └── engagement_frequency.png
+└── README.md
+
+git clone https://github.com/shivangiguptaofficial/student-course-engagement-analysis.git
+cd student-course-engagement-analysis
+mysql -u your_username -p db_course_conversions < analysis.sql
+
