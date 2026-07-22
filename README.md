@@ -60,7 +60,6 @@ erDiagram
     student_info ||--o{ student_purchases : "monetizes"
 
 
-
                                                                                                                         ## 📈 Key Business Metrics Tracked
 
 1. **Daily Active Users (DAU):** Monitoring platform traffic and daily student participation trends.
