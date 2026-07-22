@@ -27,9 +27,9 @@ The project uses a relational database structure consisting of three core tables
 | `date_purchased` | DATE | The date when the student purchased a paid course. |
 
 ---
-
 ## 🗄️ Database Architecture & ERD
 The project uses a relational database structure (`db_course_conversions`) consisting of three core tables linked via `student_id`.
+
 ```mermaid
 erDiagram
     student_info {
@@ -46,6 +46,7 @@ erDiagram
     }
     student_info ||--o{ student_engagement : "tracks activity"
     student_info ||--o{ student_purchases : "monetizes"
+
 
 
 
