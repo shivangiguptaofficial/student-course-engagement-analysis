@@ -34,9 +34,8 @@ The project uses a relational database structure consisting of three core tables
 | Column Name       | Data Type | Description                                             |
 |-------------------|-----------|-----------------------------------------------------------|
 | `student_id`      | INT       | Unique identifier for the student who made a purchase.    |
-| `date_purchased`  | DATE      | The date when the student purchased a paid course.        |
+| `date_purchased`  | DATE      | The date when the student purchased a 
 
----
 
 erDiagram
     student_info {
