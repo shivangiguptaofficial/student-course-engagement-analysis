@@ -40,7 +40,7 @@ ORDER BY
 SELECT 
     student_id,
     COUNT(DISTINCT date_watched) AS total_days_watched,
-    WIN(date_watched) AS first_active_date,
+    MIN(date_watched) AS first_active_date,
     MAX(date_watched) AS last_active_date
 FROM 
     student_engagement
@@ -49,3 +49,4 @@ GROUP BY
 ORDER BY 
     total_days_watched DESC
 LIMIT 10;
+
