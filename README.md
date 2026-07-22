@@ -78,6 +78,21 @@ erDiagram
 * **Insight:** Illustrates how many unique days students spend interacting with course content.
 * **Key Takeaway:** Visualizes the right-skewed pattern where a majority are one-time viewers, isolated from the core cohort of dedicated power learners.
 
+## 📋 Sample Query Outputs & Snippets
+
+Here is a sample SQL query used in the analysis pipeline to calculate the **Overall Conversion Rate**, along with its expected markdown table output:
+
+### 1. SQL Query Snippet
+```sql
+-- Overall Conversion Rate (Registration-to-Purchase Funnel)
+SELECT 
+    COUNT(DISTINCT i.student_id) AS total_registered,
+    COUNT(DISTINCT p.student_id) AS total_purchased,
+    ROUND(COUNT(DISTINCT p.student_id) * 100.0 / COUNT(DISTINCT i.student_id), 2) AS overall_conversion_rate_percentage
+FROM 
+    student_info i
+LEFT JOIN 
+    student_purchases p ON i.student_id = p.student_id;
 
 
 ## 🚀 How to Run This Project
