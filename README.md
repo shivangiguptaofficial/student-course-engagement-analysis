@@ -53,7 +53,6 @@ erDiagram
     }
     student_info ||--o{ student_engagement : "tracks activity"
     student_info ||--o{ student_purchases : "monetizes"
-
     
 
 
