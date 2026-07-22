@@ -38,26 +38,6 @@ The project uses a relational database structure consisting of three core tables
 
 ---
 
-## 🧩 Database Architecture & ERD
-
-The project uses a relational database structure (`db_course_conversions`) consisting of three core tables linked via `student_id`.
-
-```mermaid
-erDiagram
-    student_info {
-        INT student_id PK "Unique Student ID"
-        DATE date_registered "Sign-up Date"
-    }
-    student_engagement {
-        INT student_id FK "Student ID"
-        DATE date_watched "Content Watch Date"
-    }
-    student_purchases {
-        INT student_id FK "Student ID"
-        DATE date_purchased "Course Purchase Date"
-    }
-    student_info ||--o{ student_engagement : "tracks activity"
-    student_info ||--o{ student_purchases : "monetizes"
 
 ## 📈 Key Business Metrics Tracked
 
