@@ -17,24 +17,24 @@ The project uses a relational database structure consisting of three core tables
 
 ### 1. Table: `student_info`
 
-| Column Name      | Data Type | Description                                   |
-|------------------|-----------|------------------------------------------------|
-| `student_id`     | INT       | Unique identifier for each registered student. |
-| `date_registered`| DATE      | The date when the student signed up on the platform. |
+| Column Name       | Data Type | Description                                    |
+|-------------------|-----------|-------------------------------------------------|
+| `student_id`      | INT       | Unique identifier for each registered student.  |
+| `date_registered` | DATE      | The date when the student signed up on the platform. |
 
 ### 2. Table: `student_engagement`
 
-| Column Name    | Data Type | Description                                         |
-|-----------------|-----------|------------------------------------------------------|
-| `student_id`    | INT       | Unique identifier for each student.                  |
-| `date_watched`  | DATE      | The specific date when the student engaged with course content. |
+| Column Name    | Data Type | Description                                                      |
+|-----------------|-----------|-------------------------------------------------------------------|
+| `student_id`    | INT       | Unique identifier for each student.                                |
+| `date_watched`  | DATE      | The specific date when the student engaged with course content.   |
 
 ### 3. Table: `student_purchases`
 
-| Column Name      | Data Type | Description                                              |
-|------------------|-----------|------------------------------------------------------------|
-| `student_id`     | INT       | Unique identifier for the student who made a purchase.     |
-| `date_purchased` | DATE      | The date when the student purchased a paid course.         |
+| Column Name       | Data Type | Description                                             |
+|-------------------|-----------|-----------------------------------------------------------|
+| `student_id`      | INT       | Unique identifier for the student who made a purchase.    |
+| `date_purchased`  | DATE      | The date when the student purchased a paid course.        |
 
 ---
 
